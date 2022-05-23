@@ -1,0 +1,109 @@
+
+Scenario: Valid credentials to login # src/test/resources/Feature_Files/Test_File_01.feature:8
+  When One_Driver is loaded          # com.stepDefinitions.SD_Test_File_01.one_driver_is_loaded()
+  When One_Property File is loaded   # com.stepDefinitions.SD_Test_File_01.one_property_file_is_loaded()
+  Then One_Directed to the site      # com.stepDefinitions.SD_Test_File_01.one_directed_to_the_site()
+  And One_Enter the user name        # com.stepDefinitions.SD_Test_File_01.one_enter_the_user_name()
+  Then One_Enter the password        # com.stepDefinitions.SD_Test_File_01.one_enter_the_password()
+  And One_Click on Login             # com.stepDefinitions.SD_Test_File_01.one_click_on_login()
+  Then One_Log Out                   # com.stepDefinitions.SD_Test_File_01.one_log_out()
+  Then One_Driver is closed          # com.stepDefinitions.SD_Test_File_01.one_Driver_is_closed()
+
+Scenario: Invalid credentials to login # src/test/resources/Feature_Files/Test_File_01.feature:15
+  When One_Driver is loaded            # com.stepDefinitions.SD_Test_File_01.one_driver_is_loaded()
+  When One_Property File is loaded     # com.stepDefinitions.SD_Test_File_01.one_property_file_is_loaded()
+  Then One_Directed to the site        # com.stepDefinitions.SD_Test_File_01.one_directed_to_the_site()
+  And One_Enter the invalid user name  # com.stepDefinitions.SD_Test_File_01.one_enter_the_invalid_user_name()
+  Then One_Enter the invalid password  # com.stepDefinitions.SD_Test_File_01.one_enter_the_invalid_password()
+  And One_Click on Login               # com.stepDefinitions.SD_Test_File_01.one_click_on_login()
+  Then One_Driver is closed            # com.stepDefinitions.SD_Test_File_01.one_Driver_is_closed()
+
+Scenario: Forgot Password               # src/test/resources/Feature_Files/Test_File_01.feature:21
+  When One_Driver is loaded             # com.stepDefinitions.SD_Test_File_01.one_driver_is_loaded()
+  When One_Property File is loaded      # com.stepDefinitions.SD_Test_File_01.one_property_file_is_loaded()
+  Then One_Directed to the site         # com.stepDefinitions.SD_Test_File_01.one_directed_to_the_site()
+  And One_Click on Forgot your password # com.stepDefinitions.SD_Test_File_01.one_click_on_forgot_your_password()
+  Then One_Driver is closed             # com.stepDefinitions.SD_Test_File_01.one_Driver_is_closed()
+
+Scenario: Different types of personal information, detailed qualifications, work experience, job related information etc. # src/test/resources/Feature_Files/Test_File_02.feature:3
+  When Two_Driver is loaded                                                                                               # com.stepDefinitions.SD_Test_File_02.two_driver_is_loaded()
+  When Two_Property File is loaded                                                                                        # com.stepDefinitions.SD_Test_File_02.two_property_file_is_loaded()
+  Then Two_Directed to the site                                                                                           # com.stepDefinitions.SD_Test_File_02.two_directed_to_the_site()
+  And Two_Enter valid credentials and login                                                                               # com.stepDefinitions.SD_Test_File_02.two_enter_valid_credentials_and_login()
+  Then Two_Click on PIM                                                                                                   # com.stepDefinitions.SD_Test_File_02.two_click_on_pim()
+  Then Two_Click on Employee List                                                                                         # com.stepDefinitions.SD_Test_File_02.two_click_on_employee_list()
+  Then Two_Log Out                                                                                                        # com.stepDefinitions.SD_Test_File_02.two_log_out()
+  Then Two_Driver is closed                                                                                               # com.stepDefinitions.SD_Test_File_02.two_driver_is_closed()
+
+Scenario: Configure optional fields           # src/test/resources/Feature_Files/Test_File_03.feature:11
+  When Three_Driver is loaded                 # com.stepDefinitions.SD_Test_File_03.three_driver_is_loaded()
+  When Three_Property File is loaded          # com.stepDefinitions.SD_Test_File_03.three_property_file_is_loaded()
+  Then Three_Directed to the site             # com.stepDefinitions.SD_Test_File_03.three_directed_to_the_site()
+  And Three_Enter valid credentials and login # com.stepDefinitions.SD_Test_File_03.three_enter_valid_credentials_and_login()
+  Then Three_Click on PIM                     # com.stepDefinitions.SD_Test_File_03.three_click_on_pim()
+  Then Three_Click on Configuration           # com.stepDefinitions.SD_Test_File_03.three_click_on_configuration()
+  Then Three_Click on Optional Fields         # com.stepDefinitions.SD_Test_File_03.three_click_on_optional_fields()
+  Then Three_Log Out                          # com.stepDefinitions.SD_Test_File_03.three_log_out()
+  Then Three_Driver is closed                 # com.stepDefinitions.SD_Test_File_03.three_driver_is_closed()
+
+Scenario: Configure custom fields             # src/test/resources/Feature_Files/Test_File_03.feature:16
+  When Three_Driver is loaded                 # com.stepDefinitions.SD_Test_File_03.three_driver_is_loaded()
+  When Three_Property File is loaded          # com.stepDefinitions.SD_Test_File_03.three_property_file_is_loaded()
+  Then Three_Directed to the site             # com.stepDefinitions.SD_Test_File_03.three_directed_to_the_site()
+  And Three_Enter valid credentials and login # com.stepDefinitions.SD_Test_File_03.three_enter_valid_credentials_and_login()
+  Then Three_Click on PIM                     # com.stepDefinitions.SD_Test_File_03.three_click_on_pim()
+  Then Three_Click on Configuration           # com.stepDefinitions.SD_Test_File_03.three_click_on_configuration()
+  Then Three_Click on Custom fields           # com.stepDefinitions.SD_Test_File_03.three_click_on_custom_fields()
+  Then Three_Log Out                          # com.stepDefinitions.SD_Test_File_03.three_log_out()
+  Then Three_Driver is closed                 # com.stepDefinitions.SD_Test_File_03.three_driver_is_closed()
+
+Scenario: To validate if admin able to View all employee details # src/test/resources/Feature_Files/Test_File_04.feature:3
+  When Four_Driver is loaded                                     # com.stepDefinitions.SD_Test_File_04.four_driver_is_loaded()
+  When Four_Property File is loaded                              # com.stepDefinitions.SD_Test_File_04.four_property_file_is_loaded()
+  Then Four_Directed to the site                                 # com.stepDefinitions.SD_Test_File_04.four_directed_to_the_site()
+  And Four_Enter valid credentials and login                     # com.stepDefinitions.SD_Test_File_04.four_enter_valid_credentials_and_login()
+  Then Four_Click on Employee List                               # com.stepDefinitions.SD_Test_File_04.four_click_on_employee_list()
+  Then Four_Log Out                                              # com.stepDefinitions.SD_Test_File_04.four_log_out()
+  Then Four_Driver is closed                                     # com.stepDefinitions.SD_Test_File_04.four_driver_is_closed()
+
+Scenario: To validate if admin able to add employee on the list # src/test/resources/Feature_Files/Test_File_05.feature:3
+  When Five_Driver is loaded                                    # com.stepDefinitions.SD_Test_File_05.five_driver_is_loaded()
+  When Five_Property File is loaded                             # com.stepDefinitions.SD_Test_File_05.five_property_file_is_loaded()
+  Then Five_Directed to the site                                # com.stepDefinitions.SD_Test_File_05.five_directed_to_the_site()
+  And Five_Enter valid credentials and login                    # com.stepDefinitions.SD_Test_File_05.five_enter_valid_credentials_and_login()
+  Then Five_Click on PIM                                        # com.stepDefinitions.SD_Test_File_05.five_click_on_pim()
+  Then Five_Click on Add Employee                               # com.stepDefinitions.SD_Test_File_05.five_click_on_add_employee()
+  Then Five_Enter New Employee data                             # com.stepDefinitions.SD_Test_File_05.five_enter_new_employee_data()
+  Then Five_Log Out                                             # com.stepDefinitions.SD_Test_File_05.five_log_out()
+  Then Five_Driver is closed                                    # com.stepDefinitions.SD_Test_File_05.five_driver_is_closed()
+
+Scenario: To validate if admin able to generate employee report # src/test/resources/Feature_Files/Test_File_06.feature:3
+  When Six_Driver is loaded                                     # com.stepDefinitions.SD_Test_File_06.six_driver_is_loaded()
+  When Six_Property File is loaded                              # com.stepDefinitions.SD_Test_File_06.six_property_file_is_loaded()
+  Then Six_Directed to the site                                 # com.stepDefinitions.SD_Test_File_06.six_directed_to_the_site()
+  And Six_Enter valid credentials and login                     # com.stepDefinitions.SD_Test_File_06.six_enter_valid_credentials_and_login()
+  Then Six_Click on PIM                                         # com.stepDefinitions.SD_Test_File_06.six_click_on_pim()
+  Then Six_Click on Reports                                     # com.stepDefinitions.SD_Test_File_06.six_click_on_reports()
+  Then Six_Add a new Report                                     # com.stepDefinitions.SD_Test_File_06.six_add_a_new_report()
+  Then Six_Log Out                                              # com.stepDefinitions.SD_Test_File_06.six_log_out()
+  Then Six_Driver is closed                                     # com.stepDefinitions.SD_Test_File_06.six_driver_is_closed()
+
+Scenario: To validate if ESS-Supervisor able to view his personal details # src/test/resources/Feature_Files/Test_File_07.feature:3
+  When Seven_Driver is loaded                                             # com.stepDefinitions.SD_Test_File_07.seven_driver_is_loaded()
+  When Seven_Property File is loaded                                      # com.stepDefinitions.SD_Test_File_07.seven_property_file_is_loaded()
+  Then Seven_Directed to the site                                         # com.stepDefinitions.SD_Test_File_07.seven_directed_to_the_site()
+  And Seven_Enter valid credentials and login                             # com.stepDefinitions.SD_Test_File_07.seven_enter_valid_credentials_and_login()
+  Then Seven_Click on PIM                                                 # com.stepDefinitions.SD_Test_File_07.seven_click_on_pim()
+  Then Seven_Click on Employee List                                       # com.stepDefinitions.SD_Test_File_07.seven_click_on_employee_list()
+  Then Seven_Log Out                                                      # com.stepDefinitions.SD_Test_File_07.seven_log_out()
+  Then Seven_Driver is closed                                             # com.stepDefinitions.SD_Test_File_07.seven_driver_is_closed()
+
+Scenario: To validate if ESS-Employee  can view his personal details under the �My Info� Module. # src/test/resources/Feature_Files/Test_File_08.feature:3
+  When Eight_Driver is loaded                                                                    # com.stepDefinitions.SD_Test_File_08.eight_driver_is_loaded()
+  When Eight_Property File is loaded                                                             # com.stepDefinitions.SD_Test_File_08.eight_property_file_is_loaded()
+  Then Eight_Directed to the site                                                                # com.stepDefinitions.SD_Test_File_08.eight_directed_to_the_site()
+  And Eight_Enter the user name                                                                  # com.stepDefinitions.SD_Test_File_08.eight_enter_the_user_name()
+  Then Eight_Enter the password                                                                  # com.stepDefinitions.SD_Test_File_08.eight_enter_the_password()
+  And Eight_Click on Login                                                                       # com.stepDefinitions.SD_Test_File_08.eight_click_on_login()
+  Then Eight_Log Out                                                                             # com.stepDefinitions.SD_Test_File_08.eight_log_out()
+  Then Eight_Driver is closed                                                                    # com.stepDefinitions.SD_Test_File_08.eight_Driver_is_closed()
