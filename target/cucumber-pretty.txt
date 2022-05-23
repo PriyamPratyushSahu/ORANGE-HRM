@@ -1,0 +1,7 @@
+
+Scenario: Valid credentials to login # src/test/resources/Feature_Files/Test_File_01.feature:8
+  When One_Driver is loaded          # com.stepDefinitions.SD_Test_File_01.one_driver_is_loaded()
+  When One_Property File is loaded   # com.stepDefinitions.SD_Test_File_01.one_property_file_is_loaded()
+  Then One_Directed to the site      # com.stepDefinitions.SD_Test_File_01.one_directed_to_the_site()
+  And One_Enter the user name        # com.stepDefinitions.SD_Test_File_01.one_enter_the_user_name()
+  Then One_Enter the password        # com.stepDefinitions.SD_Test_File_01.one_enter_the_password()
